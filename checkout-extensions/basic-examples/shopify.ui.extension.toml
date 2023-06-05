@@ -1,0 +1,11 @@
+type = "checkout_ui_extension"
+name = "checkout-ui"
+
+extension_points = [
+  'Checkout::Dynamic::Render',
+  'Checkout::DeliveryAddress::RenderBefore',
+  'Checkout::Reductions::RenderAfter'
+]
+
+[capabilities]
+block_progress = true
